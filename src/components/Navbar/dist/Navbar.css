@@ -1,0 +1,95 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+.navbar .navbar-logo {
+  cursor: pointer;
+}
+.navbar .navbar-list {
+  display: flex;
+}
+.navbar .navbar-item {
+  margin: 0 40px;
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.navbar a:hover {
+  color: antiquewhite;
+  transition: 250ms;
+}
+.navbar .navbar-menu {
+  display: none;
+  cursor: pointer;
+}
+.navbar .navbar-tele {
+  cursor: pointer;
+  margin: 0 40px;
+}
+.navbar .navbar-links {
+  display: flex;
+}
+.navbar .navbar-basket {
+  cursor: pointer;
+  margin-left: 76px;
+}
+.navbar .navbar-basket:hover {
+  color: antiquewhite;
+}
+.navbar .header__bag {
+  width: 40px;
+  height: 37px;
+  cursor: pointer;
+}
+.navbar .header__bag img {
+  width: 32px;
+  height: 32px;
+}
+.navbar .header__bag-count {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 0;
+  top: -24px;
+  left: 21px;
+  font-size: 12px;
+  background-color: #FCB500;
+  color: black;
+  text-align: center;
+}
+@media screen and (max-width: 1500px) {
+  .navbar .navbar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: 300px;
+    transition: all 1s;
+    background: #000;
+    z-index: 10;
+  }
+  .navbar .navbar-list--active {
+    left: 0;
+  }
+  .navbar .navbar-menu {
+    display: flex;
+  }
+}
