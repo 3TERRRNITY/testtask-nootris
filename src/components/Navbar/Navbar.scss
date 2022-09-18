@@ -4,9 +4,8 @@
     margin: 0;
     padding: 0;
 }
-//TODO:Сделать навбар заблоченным наверху
+
 .navbar{
-    // position: static;
     display: flex;
     justify-content: space-between;
     margin: 40px;
@@ -89,7 +88,6 @@
     }
 
     @media screen and (max-width: 1500px){
-
         .navbar-list{
             display: flex;
             flex-direction: column;
@@ -102,6 +100,7 @@
             height: 300px;
             transition: all 1s;
             background: #000;
+            filter: blur(0.2);
             z-index: 10;
         }
 
