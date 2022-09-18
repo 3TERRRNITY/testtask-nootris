@@ -3,10 +3,21 @@
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-//TODO:Сделать навбар заблоченным наверху
+
+.fixed-top{
+    position: fixed;
+    top: 0;
+    background: #000;
+    z-index: 10;
+    width: 100%;
+
+}
+
 .navbar{
-    // position: static;
+    z-index: 20;
+    top: 20px;
     display: flex;
     justify-content: space-between;
     margin: 40px;
@@ -89,7 +100,6 @@
     }
 
     @media screen and (max-width: 1500px){
-
         .navbar-list{
             display: flex;
             flex-direction: column;
@@ -102,6 +112,7 @@
             height: 300px;
             transition: all 1s;
             background: #000;
+            filter: blur(0.2);
             z-index: 10;
         }
 

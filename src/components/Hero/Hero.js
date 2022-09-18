@@ -1,8 +1,5 @@
 import React from "react";
 import "./Hero.scss";
-import promo from "../../vector/nootris.png";
-import ginger from "../../vector/ginger.png";
-import lemon from "../../vector/Lemon.png";
 
 export default function Hero() {
   return (
@@ -23,11 +20,7 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      <div className="images">
-        <img src={promo} alt="promo-img" className="promo-img" />
-        <img src={ginger} alt="ginger-img" className="ginger-img" />
-        <img src={lemon} alt="lemon-img" className="lemon-img" />
-      </div>
+      <div className="image"></div>
     </div>
   );
 }

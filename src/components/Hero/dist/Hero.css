@@ -1,7 +1,10 @@
 .promo {
+  background-image: url("../../vector/background.png");
+  background-size: cover;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
+  margin-top: 120px;
   min-height: 800px;
   background-color: #FCDA28;
   color: black;
@@ -51,30 +54,25 @@
     padding-left: 0;
   }
 }
-.promo .images {
+.promo .image {
+  background-image: url("../../vector/nootris-promo.png");
+  background-size: contain;
+  height: 842px;
+  width: 712px;
   position: absolute;
   display: flex;
   right: 160px;
   top: 200px;
 }
-.promo .images .promo-img {
-  position: absolute;
-  z-index: 2;
-}
-.promo .images .ginger-img {
-  position: relative;
-  top: 200px;
-  right: 150px;
-}
-.promo .images .lemon-img {
-  position: absolute;
-  right: 350px;
-  top: 380px;
-  z-index: 3;
-}
-@media screen and (max-width: 1100px) {
-  .promo {
+@media screen and (max-width: 1500px) {
+  .promo .promo {
+    width: auto;
+    position: absolute;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+  .promo .image {
+    display: none;
   }
 }
