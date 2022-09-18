@@ -11,7 +11,7 @@ export default function Navbar({ navbarLinks }) {
     setMenuClicked(!menuClicked);
   };
   return (
-    <>
+    <div className="fixed-top">
       <nav className="navbar">
         <img src={logo} alt="nootris-logo" className="navbar-logo" />
 
@@ -42,6 +42,6 @@ export default function Navbar({ navbarLinks }) {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 }
